@@ -16,18 +16,14 @@ declare module "react" {
   export function useEffect(didUpdate: () => void | (() => void)): void;
 }
 
-const styles: React.CSSProperties = {
-  fontFamily: "sans-serif"
-};
-
 const App = () => {
   return (
-    <div style={styles}>
+    <>
       <CounterComponent />
 
       <div>=================</div>
       <EmployeesComponent />
-    </div>
+    </>
   );
 };
 
