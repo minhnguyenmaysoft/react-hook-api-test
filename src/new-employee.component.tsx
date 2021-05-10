@@ -60,7 +60,7 @@ const NewEmployeeComponent = (backToList: any) => {
 
       <button
         type="submit"
-        onClick={backToList}
+        onClick={() => backToList && backToList()}
         className="btn btn-primary mb-2"
       >
         Back
